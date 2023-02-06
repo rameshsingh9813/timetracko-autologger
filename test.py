@@ -1,4 +1,4 @@
-# import pyautogui as pag
+import pyautogui as pag
 # import time
 # while True:
 #     print(pag.position())
@@ -6,6 +6,8 @@
 #     if pag.position().x<=20:
 #         break;
 
+print(pag.size())
+print((508+846)/2)
 #
 # from ctypes import windll
 #
@@ -23,11 +25,21 @@
 #
 # print(get_ppi())
 
+#
+#
+# import pyautogui as pag
+# import time
+#
+# time.sleep(2)
+# button7location = pag.locateOnScreen('photo_collection/second_page.png')
+# print(type(button7location))
 
 
-import pyautogui as pag
-import time
+# print(type({}))
 
-time.sleep(2)
-button7location = pag.locateOnScreen('photo_collection/third_page.png')
-print(button7location.left)
+#
+# k=900
+# while k>500:
+#     k+=1
+#     if k>1000:
+#         break

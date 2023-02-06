@@ -36,6 +36,23 @@ def time_counter(x):
         time.sleep(1)
 
 
+def imagevalideate_click(xc, yc, mt, img_name):
+    while True:
+        time_adder = 0
+        position_2 = pag.locateOnScreen(f'photo_collection/{img_name}')
+        if position_2 is None:
+            time.sleep(0.2)
+            time_adder + 0.2
+            if time_adder > 10:
+                move_click_sleep(xc, yc, mt, 1)
+                break
+            else:
+                continue;
+        else:
+            move_click_sleep(xc, yc, mt, 1)
+            break;
+
+
 print(f"I am waiting upto {initial_waiting_time} second  to proceed the further operation, keep patience")
 time_counter(initial_waiting_time)
 print("Ok i am openning timetrako application.....")
@@ -55,11 +72,7 @@ move_click_write(first_page_x_cor, pw_y, move_time, password)
 move_click_sleep(first_page_x_cor, si_y, move_time, 1)
 
 # after that process further
-k=pag.locateOnScreen('photo_collection/second_page.png')
-print(k)
-move_click_sleep(first_page_x_cor, sp_y, move_time, 1)
+imagevalideate_click(first_page_x_cor, sp_y, move_time, "second_page.png")
 
 # clicking the clocking bottom
-k=pag.locateOnScreen('photo_collection/third_page.png')
-print(k)
-move_click_sleep(first_page_x_cor, ci_y, move_time, 1)
+imagevalideate_click(first_page_x_cor, ci_y, move_time, "third_page.png")

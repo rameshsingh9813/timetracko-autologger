@@ -41,8 +41,7 @@ time_counter(initial_waiting_time)
 print("Ok i am openning timetrako application.....")
 
 subprocess.Popen(timetrako_path)
-time.sleep(3)
-button7location = pag.locateOnScreen('photo_collection/first_page.png')
+time.sleep(5)
 print("Your app is opened!")
 
 # move  the cursor for entering the username
@@ -55,11 +54,7 @@ move_click_write(first_page_x_cor, pw_y, move_time, password)
 move_click_sleep(first_page_x_cor, si_y, move_time, 1)
 
 # after that process further
-k=pag.locateOnScreen('photo_collection/second_page.png')
-print(k)
 move_click_sleep(first_page_x_cor, sp_y, move_time, 1)
 
 # clicking the clocking bottom
-k=pag.locateOnScreen('photo_collection/third_page.png')
-print(k)
 move_click_sleep(first_page_x_cor, ci_y, move_time, 1)

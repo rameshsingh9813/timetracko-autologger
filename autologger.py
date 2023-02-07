@@ -2,8 +2,8 @@ import pyautogui as pag
 import time
 import subprocess
 
-username = "rameshkumar.mahato@entegrasources.com.np"
-password = "Ramesh@9813"
+username = "place your username"
+password = "place your password"
 timetrako_path = 'F:\\other program\\timetrako\\ssd ins\\Timetracko.exe'
 initial_waiting_time = 2
 move_time = 1
